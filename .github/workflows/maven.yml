@@ -30,7 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build & Install
-      run: mvn -B install --file BDO_Test/pom.xml -D skipTests --no-transfer-progress
+      run: mvn -B install --file pom.xml -D skipTests --no-transfer-progress
     - name: Install Playwright
       run: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
     - name: Run tests
