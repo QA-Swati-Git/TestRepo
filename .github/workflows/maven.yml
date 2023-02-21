@@ -33,8 +33,16 @@ jobs:
       run: mvn --file pom.xml -B install -D skipTests --no-transfer-progress
     - name: Install Playwright
       run: mvn --file pom.xml exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
-    - name: Run tests
-      run: mvn --file pom.xml clean test
+ 
+    - name: Set up Chrome
+      uses: browser-actions/setup-chrome@v1
+
+    - name: Build with Maven
+      run: mvn -B install -D skipTests
+
+    - name: Run tests in Chrome
+      run: mvn --file pom.xml -Dtest=testng_regression.xml -DbrowserName=chromium -Dheaded=true test
+
 
 
 
