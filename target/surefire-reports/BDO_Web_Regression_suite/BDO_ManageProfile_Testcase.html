@@ -1,0 +1,366 @@
+<html>
+<head>
+<title>TestNG:  BDO_ManageProfile_Testcase</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BDO_ManageProfile_Testcase</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 09 23:57:39 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31162 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile()'><b>VerifyManageProfile_UpdateMobile</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyMobileUpdateSuccess(BDO_ManageProfile.java:112)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace410931765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace410931765'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyMobileUpdateSuccess(BDO_ManageProfile.java:112)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+</pre></div></td>
+<td>16</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail()'><b>VerifyManageProfilePage_UpdateEmail</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyUpdateEmailUI(BDO_ManageProfile.java:31)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace994632067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace994632067'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyUpdateEmailUI(BDO_ManageProfile.java:31)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+</pre></div></td>
+<td>0</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.Verify_function_of_Cancel_pop()'><b>Verify_function_of_Cancel_pop</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td></td>
+<td>0</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.NavigateToManageProfile()'><b>NavigateToManageProfile</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td></td>
+<td>7</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.Verify_Cancel_UpdateEmail()'><b>Verify_Cancel_UpdateEmail</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td></td>
+<td>0</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.Verify_Cancel_UpdateMobile()'><b>Verify_Cancel_UpdateMobile</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td></td>
+<td>0</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+<tr>
+<td title='com.qa.BDO.Test.BDO_ManageProfile_Testcases.Reset_User_profile_details()'><b>Reset_User_profile_details</b><br>Test class: com.qa.BDO.Test.BDO_ManageProfile_Testcases</td>
+<td></td>
+<td>2</td>
+<td>com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d</td></tr>
+</table><p>
+</body>
+</html>

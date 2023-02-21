@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-09T23:57:05 IST" name="BDO_Web_Regression_suite" finished-at="2023-02-09T23:58:11 IST" duration-ms="65625">
+    <groups>
+    </groups>
+    <test started-at="2023-02-09T23:57:05 IST" name="BDO_Homepage_Testcase" finished-at="2023-02-09T23:57:12 IST" duration-ms="6957">
+      <class name="com.qa.BDO.Test.BDO_Home_Testcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.BDO.Test.BDO_Home_Testcases@e36bb2a]" started-at="2023-02-09T23:57:05 IST" name="setup" finished-at="2023-02-09T23:57:10 IST" duration-ms="4848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateHomePageElements()[pri:0, instance:com.qa.BDO.Test.BDO_Home_Testcases@e36bb2a]" started-at="2023-02-09T23:57:10 IST" name="ValidateHomePageElements" finished-at="2023-02-09T23:57:12 IST" duration-ms="1771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHomePageElements -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.BDO.Test.BDO_Home_Testcases@e36bb2a]" started-at="2023-02-09T23:57:12 IST" name="tearDown" finished-at="2023-02-09T23:57:12 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.BDO.Test.BDO_Home_Testcases -->
+    </test> <!-- BDO_Homepage_Testcase -->
+    <test started-at="2023-02-09T23:57:12 IST" name="BDO_Login_Testcase" finished-at="2023-02-09T23:57:30 IST" duration-ms="17730">
+      <class name="com.qa.BDO.Test.BDO_Login_Testcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:12 IST" name="setup" finished-at="2023-02-09T23:57:15 IST" duration-ms="3459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyLoginCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:15 IST" name="VerifyLoginCredentials" data-provider="credentials" finished-at="2023-02-09T23:57:17 IST" duration-ms="2010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EmptyUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@0007]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginCredentials -->
+        <test-method signature="VerifyLoginCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:17 IST" name="VerifyLoginCredentials" data-provider="credentials" finished-at="2023-02-09T23:57:18 IST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PasswordEmpty]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BBNDB001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginCredentials -->
+        <test-method signature="VerifyLoginCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:18 IST" name="VerifyLoginCredentials" data-provider="credentials" finished-at="2023-02-09T23:57:18 IST" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BothCredentialEmpty]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginCredentials -->
+        <test-method signature="VerifyLoginCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:18 IST" name="VerifyLoginCredentials" data-provider="credentials" finished-at="2023-02-09T23:57:19 IST" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUsernameandPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BBNDB0010]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@0007]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginCredentials -->
+        <test-method signature="VerifyLoginCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:19 IST" name="VerifyLoginCredentials" data-provider="credentials" finished-at="2023-02-09T23:57:20 IST" duration-ms="1399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidPassword]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[BBNDB001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test@20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginCredentials -->
+        <test-method signature="LoginAttemptExhausted()[pri:2, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:20 IST" name="LoginAttemptExhausted" finished-at="2023-02-09T23:57:23 IST" duration-ms="2829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAttemptExhausted -->
+        <test-method signature="VaildateSuccessfullogin()[pri:3, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:23 IST" name="VaildateSuccessfullogin" finished-at="2023-02-09T23:57:29 IST" duration-ms="6605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VaildateSuccessfullogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.BDO.Test.BDO_Login_Testcases@79b663b3]" started-at="2023-02-09T23:57:29 IST" name="tearDown" finished-at="2023-02-09T23:57:30 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.BDO.Test.BDO_Login_Testcases -->
+    </test> <!-- BDO_Login_Testcase -->
+    <test started-at="2023-02-09T23:57:30 IST" name="BDO_MyAccountSummary_Testcase" finished-at="2023-02-09T23:57:39 IST" duration-ms="9730">
+      <class name="com.qa.BDO.Test.BDO_AccountSummary_Testcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.BDO.Test.BDO_AccountSummary_Testcases@502f8b57]" started-at="2023-02-09T23:57:30 IST" name="setup" finished-at="2023-02-09T23:57:32 IST" duration-ms="2576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NavigateToUpdateProfilePage()[pri:1, instance:com.qa.BDO.Test.BDO_AccountSummary_Testcases@502f8b57]" started-at="2023-02-09T23:57:32 IST" name="NavigateToUpdateProfilePage" finished-at="2023-02-09T23:57:39 IST" duration-ms="6928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToUpdateProfilePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.BDO.Test.BDO_AccountSummary_Testcases@502f8b57]" started-at="2023-02-09T23:57:39 IST" name="tearDown" finished-at="2023-02-09T23:57:39 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.BDO.Test.BDO_AccountSummary_Testcases -->
+    </test> <!-- BDO_MyAccountSummary_Testcase -->
+    <test started-at="2023-02-09T23:57:39 IST" name="BDO_ManageProfile_Testcase" finished-at="2023-02-09T23:58:11 IST" duration-ms="31162">
+      <class name="com.qa.BDO.Test.BDO_ManageProfile_Testcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:39 IST" name="setup" finished-at="2023-02-09T23:57:42 IST" duration-ms="2645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NavigateToManageProfile()[pri:1, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:42 IST" name="NavigateToManageProfile" finished-at="2023-02-09T23:57:50 IST" duration-ms="7525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToManageProfile -->
+        <test-method signature="Verify_Cancel_UpdateMobile()[pri:2, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:50 IST" name="Verify_Cancel_UpdateMobile" finished-at="2023-02-09T23:57:50 IST" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Cancel_UpdateMobile -->
+        <test-method signature="Verify_Cancel_UpdateEmail()[pri:3, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:50 IST" name="Verify_Cancel_UpdateEmail" finished-at="2023-02-09T23:57:50 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Cancel_UpdateEmail -->
+        <test-method signature="Verify_function_of_Cancel_pop()[pri:4, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:50 IST" name="Verify_function_of_Cancel_pop" finished-at="2023-02-09T23:57:51 IST" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_function_of_Cancel_pop -->
+        <test-method signature="VerifyManageProfile_UpdateMobile()[pri:5, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:57:51 IST" name="VerifyManageProfile_UpdateMobile" finished-at="2023-02-09T23:58:08 IST" duration-ms="16690" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+at com.qa.BDO.pages.BDO_ManageProfile.VerifyMobileUpdateSuccess(BDO_ManageProfile.java:112)
+at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyManageProfile_UpdateMobile -->
+        <test-method signature="VerifyManageProfilePage_UpdateEmail()[pri:6, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:58:08 IST" name="VerifyManageProfilePage_UpdateEmail" finished-at="2023-02-09T23:58:08 IST" duration-ms="4" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+at com.qa.BDO.pages.BDO_ManageProfile.VerifyUpdateEmailUI(BDO_ManageProfile.java:31)
+at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 40 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyManageProfilePage_UpdateEmail -->
+        <test-method signature="Reset_User_profile_details()[pri:7, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:58:08 IST" name="Reset_User_profile_details" finished-at="2023-02-09T23:58:10 IST" duration-ms="2752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reset_User_profile_details -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.BDO.Test.BDO_ManageProfile_Testcases@1286528d]" started-at="2023-02-09T23:58:10 IST" name="tearDown" finished-at="2023-02-09T23:58:11 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.BDO.Test.BDO_ManageProfile_Testcases -->
+    </test> <!-- BDO_ManageProfile_Testcase -->
+  </suite> <!-- BDO_Web_Regression_suite -->
+</testng-results>

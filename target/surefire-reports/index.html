@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-BDO_Web_Regression_suite" class="navigator-link">
+              <span class="suite-name border-failed">BDO_Web_Regression_suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>testng_regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-BDO_Web_Regression_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 2 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BDO_Web_Regression_suite" class="hide-methods failed suite-BDO_Web_Regression_suite"> (hide)</a> <!-- hide-methods failed suite-BDO_Web_Regression_suite -->
+                      <a href="#" panel-name="suite-BDO_Web_Regression_suite" class="show-methods failed suite-BDO_Web_Regression_suite"> (show)</a> <!-- show-methods failed suite-BDO_Web_Regression_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-BDO_Web_Regression_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="VerifyManageProfilePage_UpdateEmail">VerifyManageProfilePage_UpdateEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="VerifyManageProfile_UpdateMobile">VerifyManageProfile_UpdateMobile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BDO_Web_Regression_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BDO_Web_Regression_suite" class="hide-methods passed suite-BDO_Web_Regression_suite"> (hide)</a> <!-- hide-methods passed suite-BDO_Web_Regression_suite -->
+                      <a href="#" panel-name="suite-BDO_Web_Regression_suite" class="show-methods passed suite-BDO_Web_Regression_suite"> (show)</a> <!-- show-methods passed suite-BDO_Web_Regression_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-BDO_Web_Regression_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="LoginAttemptExhausted">LoginAttemptExhausted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="NavigateToManageProfile">NavigateToManageProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_AccountSummary_Testcases" class="method navigator-link" hash-for-method="NavigateToUpdateProfilePage">NavigateToUpdateProfilePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="Reset_User_profile_details">Reset_User_profile_details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VaildateSuccessfullogin">VaildateSuccessfullogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Home_Testcases" class="method navigator-link" hash-for-method="ValidateHomePageElements">ValidateHomePageElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VerifyLoginCredentials(InvalidPassword, BBNDB001, Test@20)">VerifyLoginCredentials(InvalidPassword, BBNDB001, Test@20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VerifyLoginCredentials(InvalidUsernameandPassword, BBNDB0010, Password@0007)">VerifyLoginCredentials(InvalidUsernameandPassword, BBNDB0010, Password@0007)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VerifyLoginCredentials(EmptyUsername, , Password@0007)">VerifyLoginCredentials(EmptyUsername, , Password@0007)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VerifyLoginCredentials(PasswordEmpty, BBNDB001, )">VerifyLoginCredentials(PasswordEmpty, BBNDB001, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_Login_Testcases" class="method navigator-link" hash-for-method="VerifyLoginCredentials(BothCredentialEmpty, , )">VerifyLoginCredentials(BothCredentialEmpty, , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="Verify_Cancel_UpdateEmail">Verify_Cancel_UpdateEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="Verify_Cancel_UpdateMobile">Verify_Cancel_UpdateMobile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BDO_Web_Regression_suite" title="com.qa.BDO.Test.BDO_ManageProfile_Testcases" class="method navigator-link" hash-for-method="Verify_function_of_Cancel_pop">Verify_function_of_Cancel_pop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BDO_Web_Regression_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BDO_Web_Regression_suite" class="panel BDO_Web_Regression_suite">
+          <div class="suite-BDO_Web_Regression_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.BDO.Test.BDO_ManageProfile_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyManageProfilePage_UpdateEmail">
+                  </a> <!-- VerifyManageProfilePage_UpdateEmail -->
+                  <span class="method-name">VerifyManageProfilePage_UpdateEmail</span>
+                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyUpdateEmailUI(BDO_ManageProfile.java:31)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;Error
+  stack=&apos;Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyManageProfile_UpdateMobile">
+                  </a> <!-- VerifyManageProfile_UpdateMobile -->
+                  <span class="method-name">VerifyManageProfile_UpdateMobile</span>
+                  <div class="stack-trace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$39(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:800)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:511)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:3642)
+	at com.qa.BDO.pages.BDO_ManageProfile.VerifyMobileUpdateSuccess(BDO_ManageProfile.java:112)
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+  name=&apos;Error
+  stack=&apos;Error: Target closed
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (&lt;anonymous&gt;)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:201)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 40 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDO_Web_Regression_suite-class-failed -->
+          <div class="suite-BDO_Web_Regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.BDO.Test.BDO_ManageProfile_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateToManageProfile">
+                  </a> <!-- NavigateToManageProfile -->
+                  <span class="method-name">NavigateToManageProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Reset_User_profile_details">
+                  </a> <!-- Reset_User_profile_details -->
+                  <span class="method-name">Reset_User_profile_details</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Cancel_UpdateEmail">
+                  </a> <!-- Verify_Cancel_UpdateEmail -->
+                  <span class="method-name">Verify_Cancel_UpdateEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Cancel_UpdateMobile">
+                  </a> <!-- Verify_Cancel_UpdateMobile -->
+                  <span class="method-name">Verify_Cancel_UpdateMobile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_function_of_Cancel_pop">
+                  </a> <!-- Verify_function_of_Cancel_pop -->
+                  <span class="method-name">Verify_function_of_Cancel_pop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDO_Web_Regression_suite-class-passed -->
+          <div class="suite-BDO_Web_Regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.BDO.Test.BDO_Home_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateHomePageElements">
+                  </a> <!-- ValidateHomePageElements -->
+                  <span class="method-name">ValidateHomePageElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDO_Web_Regression_suite-class-passed -->
+          <div class="suite-BDO_Web_Regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.BDO.Test.BDO_AccountSummary_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigateToUpdateProfilePage">
+                  </a> <!-- NavigateToUpdateProfilePage -->
+                  <span class="method-name">NavigateToUpdateProfilePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDO_Web_Regression_suite-class-passed -->
+          <div class="suite-BDO_Web_Regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.BDO.Test.BDO_Login_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAttemptExhausted">
+                  </a> <!-- LoginAttemptExhausted -->
+                  <span class="method-name">LoginAttemptExhausted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VaildateSuccessfullogin">
+                  </a> <!-- VaildateSuccessfullogin -->
+                  <span class="method-name">VaildateSuccessfullogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginCredentials(InvalidPassword, BBNDB001, Test@20)">
+                  </a> <!-- VerifyLoginCredentials(InvalidPassword, BBNDB001, Test@20) -->
+                  <span class="method-name">VerifyLoginCredentials</span>
+                  <span class="parameters">(InvalidPassword,BBNDB001,Test@20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginCredentials(InvalidUsernameandPassword, BBNDB0010, Password@0007)">
+                  </a> <!-- VerifyLoginCredentials(InvalidUsernameandPassword, BBNDB0010, Password@0007) -->
+                  <span class="method-name">VerifyLoginCredentials</span>
+                  <span class="parameters">(InvalidUsernameandPassword,BBNDB0010,Password@0007)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginCredentials(EmptyUsername, , Password@0007)">
+                  </a> <!-- VerifyLoginCredentials(EmptyUsername, , Password@0007) -->
+                  <span class="method-name">VerifyLoginCredentials</span>
+                  <span class="parameters">(EmptyUsername,,Password@0007)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginCredentials(PasswordEmpty, BBNDB001, )">
+                  </a> <!-- VerifyLoginCredentials(PasswordEmpty, BBNDB001, ) -->
+                  <span class="method-name">VerifyLoginCredentials</span>
+                  <span class="parameters">(PasswordEmpty,BBNDB001,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyLoginCredentials(BothCredentialEmpty, , )">
+                  </a> <!-- VerifyLoginCredentials(BothCredentialEmpty, , ) -->
+                  <span class="method-name">VerifyLoginCredentials</span>
+                  <span class="parameters">(BothCredentialEmpty,,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDO_Web_Regression_suite-class-passed -->
+        </div> <!-- panel BDO_Web_Regression_suite -->
+        <div panel-name="test-xml-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/swati.ranjan/eclipse-workspace/BDO_Web_Automation_Test/src/test/resources/TestRunner/testng_regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;BDO_Web_Regression_suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BDO_Homepage_Testcase&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.BDO.Test.BDO_Home_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BDO_Homepage_Testcase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BDO_Login_Testcase&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.BDO.Test.BDO_Login_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BDO_Login_Testcase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BDO_MyAccountSummary_Testcase&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.BDO.Test.BDO_AccountSummary_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BDO_MyAccountSummary_Testcase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BDO_ManageProfile_Testcase&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.BDO.Test.BDO_ManageProfile_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BDO_ManageProfile_Testcase --&gt;
+&lt;/suite&gt; &lt;!-- BDO_Web_Regression_suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BDO_Web_Regression_suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BDO_Homepage_Testcase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BDO_Login_Testcase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BDO_MyAccountSummary_Testcase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BDO_ManageProfile_Testcase (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BDO_Web_Regression_suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BDO_Web_Regression_suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BDO_Web_Regression_suite');
+function tableData_BDO_Web_Regression_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'VerifyManageProfile_UpdateMobile')
+data.setCell(0, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(0, 3, 16690);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'NavigateToManageProfile')
+data.setCell(1, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(1, 3, 7525);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'NavigateToUpdateProfilePage')
+data.setCell(2, 2, 'com.qa.BDO.Test.BDO_AccountSummary_Testcases')
+data.setCell(2, 3, 6928);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'VaildateSuccessfullogin')
+data.setCell(3, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(3, 3, 6605);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginAttemptExhausted')
+data.setCell(4, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(4, 3, 2829);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Reset_User_profile_details')
+data.setCell(5, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(5, 3, 2752);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'VerifyLoginCredentials')
+data.setCell(6, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(6, 3, 2010);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidateHomePageElements')
+data.setCell(7, 2, 'com.qa.BDO.Test.BDO_Home_Testcases')
+data.setCell(7, 3, 1771);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'VerifyLoginCredentials')
+data.setCell(8, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(8, 3, 1399);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifyLoginCredentials')
+data.setCell(9, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(9, 3, 878);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Verify_Cancel_UpdateMobile')
+data.setCell(10, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(10, 3, 748);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Verify_function_of_Cancel_pop')
+data.setCell(11, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(11, 3, 527);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyLoginCredentials')
+data.setCell(12, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(12, 3, 215);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Verify_Cancel_UpdateEmail')
+data.setCell(13, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(13, 3, 112);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'VerifyLoginCredentials')
+data.setCell(14, 2, 'com.qa.BDO.Test.BDO_Login_Testcases')
+data.setCell(14, 3, 105);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'VerifyManageProfilePage_UpdateEmail')
+data.setCell(15, 2, 'com.qa.BDO.Test.BDO_ManageProfile_Testcases')
+data.setCell(15, 3, 4);
+window.suiteTableData['BDO_Web_Regression_suite']= { tableData: data, tableDiv: 'times-div-BDO_Web_Regression_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-BDO_Web_Regression_suite">
+              </div> <!-- times-div-BDO_Web_Regression_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BDO_Web_Regression_suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BDO_Web_Regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.BDO.Test.BDO_Home_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">ValidateHomePageElements</span>
+                <span class="method-start">4874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6711 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.BDO.Test.BDO_Login_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6984 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginCredentials(EmptyUsername, , Password@0007)</span>
+                <span class="method-start">10448 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginCredentials(PasswordEmpty, BBNDB001, )</span>
+                <span class="method-start">12460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginCredentials(BothCredentialEmpty, , )</span>
+                <span class="method-start">12676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginCredentials(InvalidUsernameandPassword, BBNDB0010, Password@0007)</span>
+                <span class="method-start">12783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLoginCredentials(InvalidPassword, BBNDB001, Test@20)</span>
+                <span class="method-start">13664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginAttemptExhausted</span>
+                <span class="method-start">15065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VaildateSuccessfullogin</span>
+                <span class="method-start">17910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24517 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.BDO.Test.BDO_AccountSummary_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">24720 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">NavigateToUpdateProfilePage</span>
+                <span class="method-start">27297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34226 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.BDO.Test.BDO_ManageProfile_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34456 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">NavigateToManageProfile</span>
+                <span class="method-start">37102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Cancel_UpdateMobile</span>
+                <span class="method-start">44629 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_Cancel_UpdateEmail</span>
+                <span class="method-start">45379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Verify_function_of_Cancel_pop</span>
+                <span class="method-start">45493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyManageProfile_UpdateMobile</span>
+                <span class="method-start">46022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyManageProfilePage_UpdateEmail</span>
+                <span class="method-start">62722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Reset_User_profile_details</span>
+                <span class="method-start">62728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">65481 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

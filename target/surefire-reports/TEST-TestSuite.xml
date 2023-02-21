@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="66.522" tests="16" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/swati.ranjan/apache-maven-3.8.7/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="maven.conf" value="/Users/swati.ranjan/apache-maven-3.8.7/conf"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="http.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Users/swati.ranjan/apache-maven-3.8.7"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/swati.ranjan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-09-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
+    <property name="java.runtime.version" value="19+36-2238"/>
+    <property name="user.name" value="swati.ranjan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/"/>
+    <property name="java.version" value="19"/>
+    <property name="user.dir" value="/Users/swati.ranjan/eclipse-workspace/BDO_Web_Automation_Test"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/swati.ranjan/eclipse-workspace/BDO_Web_Automation_Test"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/swati.ranjan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19+36-2238"/>
+    <property name="classworlds.conf" value="/Users/swati.ranjan/apache-maven-3.8.7/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/Users/swati.ranjan/apache-maven-3.8.7/lib/jansi-native"/>
+    <property name="socksNonProxyHosts" value="dns.google|*.dns.google|one.one.one.one|*.one.one.one.one"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="ValidateHomePageElements" classname="com.qa.BDO.Test.BDO_Home_Testcases" time="1.835"/>
+  <testcase name="VerifyLoginCredentials" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="2.012"/>
+  <testcase name="VerifyLoginCredentials" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="0.216"/>
+  <testcase name="VerifyLoginCredentials" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="0.106"/>
+  <testcase name="VerifyLoginCredentials" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="0.881"/>
+  <testcase name="VerifyLoginCredentials" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="1.4"/>
+  <testcase name="LoginAttemptExhausted" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="2.845"/>
+  <testcase name="VaildateSuccessfullogin" classname="com.qa.BDO.Test.BDO_Login_Testcases" time="6.606"/>
+  <testcase name="NavigateToUpdateProfilePage" classname="com.qa.BDO.Test.BDO_AccountSummary_Testcases" time="6.929"/>
+  <testcase name="NavigateToManageProfile" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="7.526"/>
+  <testcase name="Verify_Cancel_UpdateMobile" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="0.749"/>
+  <testcase name="Verify_Cancel_UpdateEmail" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="0.113"/>
+  <testcase name="Verify_function_of_Cancel_pop" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="0.528"/>
+  <testcase name="VerifyManageProfile_UpdateMobile" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="16.7">
+    <failure message="Error {&#10;  message=&apos;Target closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)&#10;============================================================&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target closed&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=(//div[@class=&apos;success-header&apos;])[1]&quot;)&#10;============================================================&#10;    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16&#10;    at new Promise (&lt;anonymous&gt;)&#10;    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)&#10;    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)&#10;    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)&#10;    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)&#10;    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)&#10;    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+Caused by: com.microsoft.playwright.impl.DriverException: 
+Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+]]></failure>
+    <system-out><![CDATA[
+TC:02 Verify the UI of Update Mobile Number section:
+
+
+The Mobile Number label is verified
+The current Mobile Number is: +919561564998 
+The label above dropdown is:
+ Mobile number 
+Update
+button is present 
+
+Sub header is: Update Mobile Number 
+ The default country code is: (+63) 
++919561564998]]></system-out>
+  </testcase>
+  <testcase name="VerifyManageProfilePage_UpdateEmail" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="0.006">
+    <failure message="Error {&#10;  message=&apos;Target page, context or browser has been closed&#10;  name=&apos;Error&#10;  stack=&apos;Error: Target page, context or browser has been closed&#10;    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)&#10;    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)&#10;    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)&#10;    at processImmediate (node:internal/timers:466:21)&#10;}" type="com.microsoft.playwright.PlaywrightException">com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+Caused by: com.microsoft.playwright.impl.DriverException: 
+Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+</failure>
+    <system-out><![CDATA[
+TC:05 Verify the UI of Update Email Address section:
+
+]]></system-out>
+  </testcase>
+  <testcase name="Reset_User_profile_details" classname="com.qa.BDO.Test.BDO_ManageProfile_Testcases" time="2.753"/>
+</testsuite>

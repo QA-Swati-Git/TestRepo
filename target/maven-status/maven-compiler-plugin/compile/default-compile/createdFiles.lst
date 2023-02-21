@@ -1,0 +1,7 @@
+com/qa/BDO/pages/BDO_ManageProfile.class
+com/qa/BDO/pages/BDO_Home.class
+com/qa/BDO/pages/BDO_Login.class
+com/qa/BDO/API/BDO_Unlockuser.class
+com/qa/BDO/API/BDO_Update_user_Profile.class
+com/qa/BDO/factory/BDO_PlaywrightFactory.class
+com/qa/BDO/pages/BDO_MyAccounts.class

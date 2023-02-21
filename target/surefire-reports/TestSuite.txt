@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 66.522 s <<< FAILURE! - in TestSuite
+VerifyManageProfile_UpdateMobile(com.qa.BDO.Test.BDO_ManageProfile_Testcases)  Time elapsed: 16.7 s  <<< FAILURE!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+Caused by: com.microsoft.playwright.impl.DriverException: 
+Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for locator("xpath=(//div[@class='success-header'])[1]")
+============================================================
+    at /private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crConnection.js:165:12)
+    at CRExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/chromium/crExecutionContext.js:78:28)
+    at FrameExecutionContext.evaluateWithArguments (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:61:61)
+    at evaluateExpression (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/javascript.js:215:26)
+    at async InjectedScriptPollHandler.finish (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dom.js:864:22)
+    at async RerunnableTask.rerun (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/frames.js:1557:44)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfile_UpdateMobile(BDO_ManageProfile_Testcases.java:34)
+
+VerifyManageProfilePage_UpdateEmail(com.qa.BDO.Test.BDO_ManageProfile_Testcases)  Time elapsed: 0.006 s  <<< FAILURE!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+Caused by: com.microsoft.playwright.impl.DriverException: 
+Error {
+  message='Target page, context or browser has been closed
+  name='Error
+  stack='Error: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/server/dispatchers/dispatcher.js:230:49)
+    at PipeTransport.transport.onmessage (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/cli/driver.js:50:57)
+    at Immediate._onImmediate (/private/var/folders/70/x874lf6n7cx_4tkvkkcwsmhh0000gr/T/playwright-java-6974755855971575440/package/lib/protocol/transport.js:77:34)
+    at processImmediate (node:internal/timers:466:21)
+}
+	at com.qa.BDO.Test.BDO_ManageProfile_Testcases.VerifyManageProfilePage_UpdateEmail(BDO_ManageProfile_Testcases.java:71)
+
