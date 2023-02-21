@@ -4,13 +4,13 @@
 
 
 
-  <groupId>BDO_Web_Automation_Test</groupId>
-  <artifactId>BDO_Web_Automation_Test</artifactId>
+  <groupId>TestRepo</groupId>
+  <artifactId>TestRepo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
 
 
-  <name>BDO_Web_Automation_Test</name>
+  <name>TestRepo</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
