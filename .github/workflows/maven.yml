@@ -35,6 +35,12 @@ jobs:
       run: mvn --file pom.xml exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
     - name: Run tests
       run: mvn --file pom.xml clean test
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
 
 
 
