@@ -65,7 +65,7 @@ else if(Scenario.equals("InvalidUsernameandPassword"))
 	System.out.println("\nTC:004 The expected error for Invalid Username and Password:\n");
 	String ErroronHeader3 = login.LoginwithInvalidUsernameandPassword();
 	
-	AssertJUnit.assertEquals(ErroronHeader3, "Incorrect username or password.  Please try again.");
+	AssertJUnit.assertEquals(ErroronHeader3, "Incorrect username or password.  Try again.");
    }
 
 else {

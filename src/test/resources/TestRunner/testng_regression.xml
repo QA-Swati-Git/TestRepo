@@ -5,7 +5,7 @@
 
 <test name="BDO_Homepage_Testcase">
    <classes> 
-<class name="java.com.qa.BDO.Test.BDO_Home_Testcases"/>
+<class name="com.qa.BDO.Test.BDO_Home_Testcases"/>
   </classes>
   </test> 
   
