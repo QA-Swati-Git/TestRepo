@@ -34,13 +34,14 @@ jobs:
     - name: Install Playwright
       run: mvn --file pom.xml exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
     - name: Run tests
-      run: mvn --file pom.xml clean test
-    - uses: actions/upload-artifact@v3
+      run: mvn --file pom.xml clean test        
+    - name: Upload test report
       if: always()
+      uses: actions/upload-artifact@v2
       with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+       name: "UI_tests_Results"
+       path: "target/surefire-reports/emailable-report.html"
+ 
 
 
 
