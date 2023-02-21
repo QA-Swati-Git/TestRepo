@@ -9,10 +9,12 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Choose Repo Branch:'
+        required: true
+        default: 'main'
 
 jobs:
   build:
