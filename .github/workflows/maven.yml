@@ -44,42 +44,20 @@ jobs:
       with:
        name: "UI Test Automation Report"
        path: "target/surefire-reports/emailable-report.html"
-    - name: Notify Slack of test result
-      uses: rtCamp/action-slack-notify@v2
-      with:
-        status: ${{ job.status }}
-        mentions: '@channel'
-        args: '{\"github-workflow-and-slack-integration\":\"C04QJJMKQ5R\",\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Pull Request:* ${{ github.event.pull_request.title }}\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Who?:* ${{ github.event.pull_request.user.login }}\n*Request State:* ${{ github.event.pull_request.state }}\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"<${{ github.event.pull_request.html_url }}|View Pull Request>\"}}]}'
-        attachments: |
-          [
-            {
-              "fallback": "UI Test Automation Report",
-              "title": "UI Test Automation Report",
-              "title_link": "${{ steps.upload.outputs.artifact_url }}",
-              "color": "danger"
-            }
-          ]
-          env:
-          SLACK_API_TOKEN: ${{ env.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: ${{ env.SLACK_CHANNEL_ID }}
-    - name: Notify Slack of test result
-      uses: rtCamp/action-slack-notify@v2
-      with:
-        status: ${{ job.status }}
-        mentions: '@channel'
-        args: '{\"github-workflow-and-slack-integration\":\"C04QJJMKQ5R\",\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Pull Request:* ${{ github.event.pull_request.title }}\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Who?:* ${{ github.event.pull_request.user.login }}\n*Request State:* ${{ github.event.pull_request.state }}\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"<${{ github.event.pull_request.html_url }}|View Pull Request>\"}}]}'
-        attachments: |
-          [
-            {
-              "fallback": "TestNG report",
-              "title": "TestNG report",
-              "title_link": "${{ steps.upload.outputs.artifact_url }}",
-              "color": "good"
-            }
-          ]
-          env:
-          SLACK_API_TOKEN: ${{ env.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: ${{ env.SLACK_CHANNEL_ID }}
+    - name: Notify Slack of test result (failure)
+      if: ${{ job.status != 'success' }}
+      env:
+        SLACK_BOT_TOKEN: ${{ env.SLACK_BOT_TOKEN }}
+        SLACK_CHANNEL_ID: ${{ env.SLACK_CHANNEL_ID }}
+      run: |
+        curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failed! See the UI Automation Test report for details: '${{ steps.upload.outputs.artifact_url }}'"}' https://slack.com/api/chat.postMessage?token=${{ env.SLACK_BOT_TOKEN }}&channel=${{ env.SLACK_CHANNEL_ID }}
+    - name: Notify Slack of test result (success)
+      if: ${{ job.status == 'success' }}
+      env:
+        SLACK_BOT_TOKEN: ${{ env.SLACK_BOT_TOKEN }}
+        SLACK_CHANNEL_ID: ${{ env.SLACK_CHANNEL_ID }}
+      run: |
+        curl -X POST -H 'Content-type: application/json' --data '{"text":"All tests passed! See the UI Automation Test report for details: '${{ steps.upload.outputs.artifact_url }}'"}' https://slack.com/api/chat.postMessage?token=${{ env.SLACK_BOT_TOKEN }}&channel=${{ env.SLACK_CHANNEL_ID }}
          
 
 
