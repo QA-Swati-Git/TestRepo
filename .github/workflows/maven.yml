@@ -40,7 +40,7 @@ jobs:
       run: mvn --file pom.xml clean test        
     - name: Upload test report
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
        name: "UI Test Automation Report"
        path: "target/surefire-reports/emailable-report.html"
