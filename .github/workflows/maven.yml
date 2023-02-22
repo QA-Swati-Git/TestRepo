@@ -15,6 +15,9 @@ on:
         description: 'Choose Repo Branch:'
         required: true
         default: 'main'
+env:
+  SLACK_API_TOKEN: ${{ secrets.SLACK_BOT_TOKEN}}
+  SLACK_CHANNEL_ID: C04QJJMKQ5R
 
 jobs:
   build:
