@@ -37,7 +37,15 @@ jobs:
     - name: Install Playwright
       run: mvn --file pom.xml exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
     - name: Run tests
-      run: mvn --file pom.xml clean test        
+      run: mvn --file pom.xml clean test 
+    - name: Generate Allure report
+      run: mvn allure:report
+
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: target/site/allure-maven-plugin
     - name: Upload test report
       if: always()
       uses: actions/upload-artifact@v3
